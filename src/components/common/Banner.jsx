@@ -8,9 +8,9 @@ const Banner = () => {
       background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${banner_image}) center/cover no-repeat`
     }}>
       <div className='banner-content w-100 container text-white'>
-        <div className='banner-badge text-uppercase'>join our community</div>
-        <h1 className='banner-title text-uppercase'>Vital Hit Studio</h1>
-        <p className='lead-text'>Live gaming with lots of other games. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <div className='banner-badge text-uppercase'>wishlist Our Game</div>
+        <h1 className='banner-title text-uppercase'>Viel of Evil - A Witch’s Tale</h1>
+        <p className='lead-text'>Embark on a haunting journey of revenge and redemption in a world where darkness reigns. After the brutal murder of your beloved grandmother by evil witches, you must unravel the sinister plots threatening your family and the land. Armed with ancestral artifacts and guided by the wisdom of your lineage, confront the forces of corruption that seek to plunge the realm into chaos. Uncover family secrets, harness ancient powers, and fight to restore balance before it’s too late. In this gripping tale of love, loss, and courage, no one messes with this family.</p>
         <button type="button" className='banner-btn d-flex align-items-center'>
           <span className='btn-icon'>
             <FaGamepad className='text-white' size = { 25 } />
@@ -28,7 +28,7 @@ const BannerWrapper = styled.div`
     min-height: 768px;
 
     .banner-badge{
-      background-color: var(--clr-green-normal);
+      background-color: var(--clr-red-normal);
       padding: 4px 16px;
       font-weight: 600;
       font-size: 20px;

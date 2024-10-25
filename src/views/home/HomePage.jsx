@@ -29,6 +29,8 @@ import {
 import { StoreList } from "../../components/store/index";
 import { fetchAsyncStores } from "../../redux/utils/storeUtils";
 
+import BlogList from "../../blogs/BlogList";
+
 const HomePage = () => {
   const dispatch = useDispatch();
   const games = useSelector(selectAllGames);
@@ -62,7 +64,7 @@ const HomePage = () => {
       <section className="section sc-popular">
         <div className="container">
           <Title
-            titleName={{ firstText: "top popular", secondText: "games" }}
+            titleName={{ firstText: "Viel Of Evil", secondText: "- Upcoming" }}
           />
           {gamesStatus === STATUS.LOADING ? (
             <Preloader />
@@ -124,19 +126,8 @@ const HomePage = () => {
         }}
       >
         <div className="container">
-          <Title
-            titleName={{
-              firstText: "our",
-              secondText: "game stores",
-            }}
-          />
-          {storesStatus === STATUS.LOADING ? (
-            <Preloader />
-          ) : stores?.length > 0 ? (
-            <StoreList stores={stores} />
-          ) : (
-            "No stores found!"
-          )}
+          <Title titleName={{ firstText: "our", secondText: "Blog" }} />
+          <BlogList />
         </div>
       </section>
     </HomeWrapper>
